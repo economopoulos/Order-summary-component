@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /*Primary*/
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /*Neutral*/
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.6;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-color: var(--pale-blue);
+  color: var(--desaturated-blue);
+}
+
+/*Typography*/
+h2 {
+  margin-bottom: 0.5em;
+}
+
+h2,
+.info > p,
+.btn,
+.cancel {
+  text-align: center;
+}
+
+h2,
+.plan {
+  color: var(--dark-blue);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-family: inherit;
+  margin-bottom: 1em;
+
+  box-shadow: 0px 19px 19px -8px rgba(26, 17, 120, 0.3);
+  -webkit-box-shadow: 0px 19px 19px -8px rgba(26, 17, 120, 0.3);
+  -moz-box-shadow: 0px 19px 19px -8px rgba(26, 17, 120, 0.3);
+}
+
+.info > p:first-of-type {
+  margin-bottom: 1em;
+  font-size: 0.9rem;
+}
+
+.cancel {
+  color: var(--desaturated-blue);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.cancel:hover,
+.cancel:focus {
+    color: var(--dark-blue);
+}
+
+/*Layout*/
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 2em 2.5em;
+}
+
+#hero-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.2em;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+
+#plan > a {
+  text-decoration: none;
+}
+
+#plan > a:hover,
+#plan > a:focus {
+  color: #766cf1;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #766cf1;
+  color: var(--pale-blue);
+}
+
+.annual-plan {
+  margin-right: 2.5em;
+}
