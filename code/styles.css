@@ -26,7 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 50vh;
   background-color: var(--pale-blue);
   color: var(--desaturated-blue);
 }
@@ -81,7 +81,7 @@ h2,
 
 .cancel:hover,
 .cancel:focus {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 /*Layout*/
